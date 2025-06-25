@@ -1,0 +1,654 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap");
+
+.Dummy-class {
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --purple: #593290;
+  --orange: #f36719;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+}
+/* Navbar start */
+.outer-nav {
+  margin: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 30px;
+  gap: 30px;
+  z-index: 100;
+}
+
+.navbar {
+  background-color: white;
+  width: 1225px;
+  height: 73px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 9px;
+  padding: 30px 40px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul a {
+  text-decoration: none;
+  color: #967cbc;
+  margin-left: 50px;
+  font-family: "Afacad", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.navbar a.active {
+  color: #000; 
+}
+
+
+.email-icon {
+  width: 92.3px;
+  height: 73;
+  background-color: var(--orange);
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-icon img {
+  width: 42.05px;
+  height: 42.05px;
+}
+
+/* Hero Section */
+
+.hero-section {
+  width: 1440px;
+  height: 504px;
+  background: linear-gradient(to right, #3c2063, #221238);
+  overflow: hidden;
+  position: relative;
+}
+
+.bg-images {
+  width: 100%;
+  height: 100%;
+  z-index: --99;
+  overflow: hidden;
+}
+
+.left-image {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.right-image {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+/* hero-content */
+.hero-content {
+  text-align: center;
+  z-index: 99;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50% -50%);
+}
+
+.hero-content h1 {
+  font-family: "Afacad", sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.hero-content .highlight {
+  color: #ff6a00;
+}
+
+.hero-content p {
+  font-family: "Afacad", sans-serif;
+  font-weight: 400;  
+  max-width: 700px;
+  margin: 20px auto;
+  font-size: 18px;
+  color: #d0cce4;
+
+}
+
+.cta-btn {
+    width: 329px;
+    height: 55.9px;
+  font-family: "Afacad", sans-serif;  
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 28px;
+  background-color: #615474;
+  border: 2px solid #c6bde4;
+  color: #fff;
+  border-radius: 49px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #fff;
+  color: #2d0c5e;
+}
+
+/* What We Are */
+.what-we-are {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.left-content {
+  flex: 1;
+  min-width: 752px;
+  position: relative;
+}
+
+.section-tag {
+  background-color: #F26522;
+  color: white;
+  padding: 8px 20px;
+  display: inline-block;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-bottom: -10px;
+  position: absolute;
+  z-index: 2;
+}
+
+.section-box {
+  background-color: #FFECE2;
+  padding: 30px;
+  padding-top: 40px;
+  border-left: 2px solid #aaa;
+  border-right: 2px solid #aaa;
+  position: relative;
+}
+
+.section-box h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.section-box .highlight {
+  color: #F26522;
+}
+
+.section-box p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #111;
+}
+
+.right-img{
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.right-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Our Universe of Brands */
+.brands-section {
+  background-color: #f3eaff; 
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.brands-section-tag {
+  background-color: #593290;
+  color: white;
+  display: inline-block;
+  padding: 6px 18px;
+  font-family: "Afacad", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  position: absolute;
+  top: -2%;
+  left: 46%;
+}
+
+.brands-section h2 {
+font-family: "Afacad", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #000;
+}
+
+.subtitle {
+  font-family: "Afacad", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 650px;
+  margin: 10px auto 50px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the grid */
+  padding: 20px;
+}
+
+.brand-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+.brand-card-top img {
+  width: 239px;
+  height: 41px;
+}
+
+.brand-card-bottom {
+  background-color: #593290;
+  color: white;
+  font-family: "Afacad", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 30px;
+  line-height: 168.5%;
+  border-top: 1px solid #e6e6e6;
+  min-height: 165px;    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-wrapper {
+  margin-top: 50px;
+}
+
+.explore-btn {
+  background-color: #f26522;
+  color: #000;
+  width: 320px;
+  padding: 14px 40px;
+  border-radius: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.explore-btn:hover {
+  background-color: #e75410;
+}
+
+
+
+/* philosophy-section  Start  */
+
+.philosophy-section {
+  display: flex;
+  align-items: center; /* vertically center both sides */
+  justify-content: space-between;
+  padding: 40px;
+  gap: 60px;
+  background-color: #fff; /* or whatever suits your theme */
+  z-index: 0;
+}
+
+.image-side img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffece0; /* light peach */
+  padding: 30px;
+  border-top: 1px solid #d3d3d3;
+  position: relative;
+}
+
+.section-tag {
+  font-family: "Afacad", sans-serif;
+  font-size: 18px;
+  display: inline-block;
+  background-color: #F36719;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  position: absolute;
+  top: -6%;
+  left: 5%;
+}
+
+.text-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.text-content .highlight {
+  color: #f65b0f;
+}
+
+.text-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.italic-text {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* 🔁 Responsive behavior */
+@media (max-width: 768px) {
+  .philosophy-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-side {
+    padding: 20px;
+  }
+
+  .text-content h2 {
+    font-size: 1.5rem;
+  }
+}
+/* philosophy-section Ends */
+
+/* Vision Section start */
+.vision-section {
+  position: relative;
+  background-color: #f2e7fb; /* Light lavender */
+  padding: 100px 20px;
+  text-align: center;
+  
+}
+
+.vision-tag {
+  display: inline-block;
+  background-color: #6e3baa;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+  position: absolute;
+  top: -4%;
+  left: 46%;
+  
+
+}
+
+.vision-content {
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+.vision-content h2 {
+  font-family: "Afacad", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.vision-content p {
+font-family: "Afacad", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 168.5%;
+  color: #333;
+  margin: 6px 0;
+}
+
+.vision-btn {
+  font-family: "Afacad", sans-serif;
+  display: inline-block;
+  background-color: #F36719;
+  color: #201136;
+  padding: 14px 30px;
+  font-weight: 500;
+  border-radius: 6px;
+  margin-top: 25px;
+  font-size: 23.9px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.vision-btn:hover {
+  background-color: #d7490c;
+}
+
+.vision-img {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  max-height: 100%;
+}
+
+.left-img {
+  left: 0;
+  max-width: 300px;
+}
+
+.right-img {
+  right: 0;
+  max-width: 350px;
+}
+
+/* 🔁 Responsive */
+@media (max-width: 768px) {
+  .left-img, .right-img {
+    display: none;
+  }
+
+  .vision-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .vision-btn {
+    width: 100%;
+  }
+}
+
+/* Vision section ends */
+
+
+/* Footer start */
+.footer {
+  padding: 40px 60px;
+  background-color: #24133B;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#3b2a5d 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.footer-left p{
+    font-family: "Afacad", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #f26522;
+  border-radius: 50%;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 50px;
+}
+
+.footer-nav-links {
+  display: flex;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.199);
+  padding: 10px 20px;
+  border-radius: 10px;
+  gap: 20px;
+  margin: 0;
+}
+
+.footer-nav-links li a {
+  font-family: "Afacad", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+.footer-right-bottom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-right-bottom a {
+  font-family: "Afacad", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+  text-decoration: none;
+  
+}
+
+.divider {
+  color: white;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+  }
+}
+
+
+
+
+
+
