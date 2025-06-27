@@ -181,23 +181,23 @@ body {
 
 /* What We Are */
 .what-we-are {
-  padding: 80px 20px;
+  padding: 100px 20px;
   background-color: #fff;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
 }
 
 .left-content {
-  flex: 1;
-  min-width: 752px;
+  /* flex: 1; */
+  min-width: 700px;
   position: relative;
 }
 
@@ -215,6 +215,7 @@ body {
 
 .section-box {
   background-color: #FFECE2;
+  width: 700px;
   padding: 30px;
   padding-top: 40px;
   border-left: 2px solid #aaa;
@@ -241,7 +242,7 @@ body {
 
 .right-img{
   flex: 1;
-  min-width: 300px;
+  min-width: 430px;
   text-align: center;
 }
 
@@ -363,28 +364,29 @@ font-family: "Afacad", sans-serif;
 
 .philosophy-section {
   display: flex;
-  align-items: center; /* vertically center both sides */
+  /* align-items: center; */
   justify-content: space-between;
-  padding: 40px;
-  gap: 60px;
+  padding: 100px 70px;
+  gap: 90px;
   background-color: #fff; /* or whatever suits your theme */
   z-index: 0;
 }
 
 .image-side img {
-  max-width: 100%;
+  width: 450px;
   height: auto;
 }
 
 .text-side {
-  flex: 1;
+  /* flex: 1; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #ffece0; /* light peach */
-  padding: 30px;
+  padding: 20px 30px 10px 30px;
   border-top: 1px solid #d3d3d3;
   position: relative;
+  
 }
 
 .section-tag {
@@ -399,11 +401,13 @@ font-family: "Afacad", sans-serif;
   margin-bottom: 16px;
   position: absolute;
   top: -6%;
-  left: 5%;
+  left: 4%;
 }
 
 .text-content h2 {
-  font-size: 1.8rem;
+  font-family: "Afacad", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
@@ -412,9 +416,14 @@ font-family: "Afacad", sans-serif;
 }
 
 .text-content p {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-family: "Afacad", sans-serif;
+  font-size: 18px;
+  line-height: 168.5%;
   color: #333;
+}
+
+.italic{
+  margin-top: 20px;
 }
 
 .italic-text {
@@ -443,7 +452,7 @@ font-family: "Afacad", sans-serif;
 .vision-section {
   position: relative;
   background-color: #f2e7fb; /* Light lavender */
-  padding: 100px 20px;
+  padding: 130px 20px;
   text-align: center;
   
 }
