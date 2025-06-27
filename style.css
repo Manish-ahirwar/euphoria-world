@@ -25,10 +25,6 @@ body {
   overflow-x: hidden; 
 }
 
-/* .container{
-  width: 100%;
-  max-width: 1440px;
-} */
 
 .main-container {
   width: 100vw;
@@ -135,7 +131,7 @@ body {
   z-index: 99;
   position: absolute;
   top: 40%;
-  left: 23%;
+  left: 20%;
   transform: translate(-50% -50%);
 }
 
