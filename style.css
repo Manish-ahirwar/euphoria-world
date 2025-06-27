@@ -202,6 +202,7 @@ body {
 }
 
 .section-tag {
+  font-family: "Afacad", sans-serif;  
   background-color: #F26522;
   color: white;
   padding: 8px 20px;
@@ -215,7 +216,7 @@ body {
 
 .section-box {
   background-color: #FFECE2;
-  width: 700px;
+  width: 752px;
   padding: 30px;
   padding-top: 40px;
   border-left: 2px solid #aaa;
@@ -224,10 +225,12 @@ body {
 }
 
 .section-box h2 {
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-family: "Afacad", sans-serif;  
+  font-size: 36px;
+  font-weight: 600;
   margin-bottom: 15px;
   color: #000;
+  
 }
 
 .section-box .highlight {
@@ -235,8 +238,10 @@ body {
 }
 
 .section-box p {
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-family: "Afacad", sans-serif;  
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 168.5%;
   color: #111;
 }
 
