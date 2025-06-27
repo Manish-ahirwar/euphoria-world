@@ -59,6 +59,10 @@ body {
    padding: 15px 20px;
 }
 
+.navbar .logo:hover{
+  cursor: pointer;
+}
+
 .navbar ul {
   list-style: none;
   display: flex;
@@ -72,6 +76,11 @@ body {
   font-family: "Afacad", sans-serif;
   font-size: 18px;
   font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #f26421;
 }
 
 .navbar a.active {
@@ -87,6 +96,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.email-icon:hover{
+  cursor: pointer;
 }
 
 .email-icon img {
@@ -147,6 +160,54 @@ body {
 .hero-content .highlight {
   color: #ff6a00;
 }
+
+
+/* -------------- */
+
+.heading-text {
+  font-size: 52px;
+  font-weight: 800;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.vision-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-inline: -20px;
+}
+
+.highlighted {
+  color: #f26421;
+  position: relative;
+  z-index: 2;
+  padding: 0 1px; /* spacing to prevent overlap */
+}
+
+.bracket {
+  /* position: absolute; */
+  /* top: -20px;         move above the word */
+  width: 15px;        /* adjust size if needed */
+  height: auto;
+  z-index: 1;
+}
+
+.left-bracket {
+  left: 32px;        /* position before the word */
+  top: 16px;
+  position: relative;
+
+
+}
+
+.right-bracket {
+  right: 17px;       /* position after the word */
+  top: -25px;
+  position: relative;
+}
+
 
 .hero-content p {
   font-family: "Afacad", sans-serif;
@@ -557,7 +618,7 @@ font-family: "Afacad", sans-serif;
 
 /* Footer start */
 .footer {
-  padding: 40px 60px;
+  padding: 50px 60px;
   background-color: #24133B;
   position: relative;
   overflow: hidden;
@@ -605,6 +666,10 @@ font-family: "Afacad", sans-serif;
   gap: 10px;
 }
 
+.logo img{
+  width: 286px;
+}
+
 .logo-icon {
   width: 40px;
   height: 40px;
@@ -630,7 +695,7 @@ font-family: "Afacad", sans-serif;
   background-color: rgba(255, 255, 255, 0.199);
   padding: 10px 20px;
   border-radius: 10px;
-  gap: 20px;
+  gap: 50px;
   margin: 0;
 }
 
@@ -660,6 +725,14 @@ font-family: "Afacad", sans-serif;
 .divider {
   color: white;
   font-size: 14px;
+}
+
+.footer>img{
+  position: absolute;
+  top: 1%;
+  left: 12%;
+
+
 }
 
 @media (max-width: 768px) {
