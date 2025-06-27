@@ -127,12 +127,13 @@ body {
 }
 /* hero-content */
 .hero-content {
+  width: 100vw;
   text-align: center;
   z-index: 99;
   position: absolute;
   top: 40%;
-  left: 20%;
-  transform: translate(-50% -50%);
+  left: 0%;
+  /* transform: translate(-50% -50%); */
 }
 
 .hero-content h1 {
