@@ -30,8 +30,9 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
 /* Navbar start */
-.outer-nav {
+.outer-nav{
 
   display: flex;
   justify-content: center;
@@ -39,7 +40,6 @@ body {
   top: 30px;
   gap: 30px;
   z-index: 100;
-  
   /* background-color: red; */
   width: 100%;
   
@@ -48,15 +48,17 @@ body {
 
 .navbar {
   background-color: white;
-   width: 100%;
-  max-width: 1225px; 
+  width: 1400px; 
   height: 73px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 9px;
-  /* padding: 30px 40px; */
-   padding: 15px 20px;
+   padding: 15px 25px;
+}
+
+.navbar .logo img{
+  width: 244.8px;
 }
 
 .navbar .logo:hover{
@@ -69,7 +71,11 @@ body {
   align-items: center;
 }
 
-.navbar ul a {
+.navbar i{
+    display: none;
+}
+
+/* .navbar ul a {
   text-decoration: none;
   color: #967cbc;
   margin-left: 50px;
@@ -85,12 +91,43 @@ body {
 
 .navbar a.active {
   color: #000; 
+} */
+
+.navbar ul a {
+  position: relative;
+  text-decoration: none;
+  color: #967cbc;
+  margin-left: 50px;
+  font-family: "Afacad", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
+
+.navbar ul a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #f26421;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+
+.navbar ul a:hover::after {
+  width: 100%;
+}
+
+.navbar ul li a:hover {
+  color: #f26421;
+}
+
 
 
 .email-icon {
   width: 92.3px;
-  height: 73;
+  height: 73px;
   background-color: var(--orange);
   border-radius: 9px;
   display: flex;
@@ -106,7 +143,6 @@ body {
   width: 42.05px;
   height: 42.05px;
 }
-
 
 /* Hero-section */
 
@@ -146,7 +182,7 @@ body {
   position: absolute;
   top: 40%;
   left: 0%;
-  /* transform: translate(-50% -50%); */
+  
 }
 
 .hero-content h1 {
@@ -241,17 +277,19 @@ body {
 }
 
 /* What We Are */
+
 .what-we-are {
   padding: 100px 20px;
   background-color: #fff;
 }
 
 .container {
-  max-width: 1440px;
+  max-width:1500px;
   margin: 0 auto;
+  padding-inline: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -385,8 +423,8 @@ font-family: "Afacad", sans-serif;
 }
 
 .brand-card-top img {
-  width: 239px;
-  height: 41px;
+  width: 244.8px;
+  height: 49.6px;
 }
 
 .brand-card-bottom {
@@ -497,24 +535,8 @@ font-family: "Afacad", sans-serif;
   font-weight: bold;
 }
 
-/* 🔁 Responsive behavior */
-@media (max-width: 768px) {
-  .philosophy-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .text-side {
-    padding: 20px;
-  }
-
-  .text-content h2 {
-    font-size: 1.5rem;
-  }
-}
-/* philosophy-section Ends */
-
 /* Vision Section start */
+
 .vision-section {
   position: relative;
   background-color: #f2e7fb; /* Light lavender */
@@ -568,7 +590,7 @@ font-family: "Afacad", sans-serif;
   display: inline-block;
   background-color: #F36719;
   color: #201136;
-  padding: 14px 30px;
+  padding: 10px 40px;
   font-weight: 500;
   border-radius: 6px;
   margin-top: 25px;
@@ -596,21 +618,6 @@ font-family: "Afacad", sans-serif;
 .right-img {
   right: 0;
   max-width: 350px;
-}
-
-/* 🔁 Responsive */
-@media (max-width: 768px) {
-  .left-img, .right-img {
-    display: none;
-  }
-
-  .vision-content h2 {
-    font-size: 1.5rem;
-  }
-
-  .vision-btn {
-    width: 100%;
-  }
 }
 
 /* Vision section ends */
@@ -693,7 +700,7 @@ font-family: "Afacad", sans-serif;
   display: flex;
   list-style: none;
   background-color: rgba(255, 255, 255, 0.199);
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-radius: 10px;
   gap: 50px;
   margin: 0;
@@ -735,18 +742,46 @@ font-family: "Afacad", sans-serif;
 
 }
 
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
 
-  .nav-links {
-    flex-wrap: wrap;
-  }
+/* Media Query */
+
+@media (max-width: 480px) {
+     .outer-nav{
+      top: 10px;
+      width: 100%;
+      padding-inline: 10px;
+      /* background-color: red; */
+
+     } 
+
+     .navbar{
+      width: 100%;
+      height: 60px;
+      padding: 10px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     }
+
+     .navbar .logo img{
+      width: 200px;
+     }
+
+
+     .navbar>i{
+      display: block;
+      font-size: 1.5rem;
+     }
+
+     .email-icon{
+      display: none;
+     }
+
+     .nav-links{
+      display: none;
+     }
+
 }
-
 
 
 
